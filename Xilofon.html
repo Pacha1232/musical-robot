@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title> EL XILOFON DE PACHA</title>
+        <p id="t">Presionar las teclas de 2-9</p>
+        <link rel="stylesheet" type="text/css" href="xilo.css">
+    </head>
+    <body>
+        
+        <div id="contenedor">
+            <div id ="uno" class="nota center" >Do</div>
+            <div id="dos"  class="nota center">Re</div>
+            <div id="tres" class="nota center">Mi</div>
+            <div id ="cuatro" class="nota center">Fa</div>
+            <div id ="cinco" class="nota center">Sol</div>
+            <div id ="seis" class="nota center">La</div>
+            <div id="siete" class="nota center">Si</div>
+            <div id="ocho" class="nota center">Do#</div>
+
+        </div>
+        <script>
+
+            (function() {
+                document.onkeydown = function(e) {
+                    if (e.which === 50) {
+                        var audioElement = document.getElementById("audio1").play(); 
+                        document.getElementById("uno").style.color="#adff2f";
+                        document.getElementById("uno").style.height="350px";
+                        setTimeout(uno2,100)
+                    }
+                    if (e.which === 51) {
+                        var audioElement = document.getElementById("audio2").play(); 
+                        document.getElementById("dos").style.color="#adff2f";
+                        document.getElementById("dos").style.height="330px";
+                        setTimeout(dos2,100)
+                    } 
+                    if (e.which === 52) {
+                        var audioElement = document.getElementById("audio3").play(); 
+                        document.getElementById("tres").style.color="#adff2f";
+                        document.getElementById("tres").style.height="310px";
+                        setTimeout(tres2,100)
+                    } 
+                    if (e.which === 53) {
+                        var audioElement = document.getElementById("audio4").play();
+                        document.getElementById("cuatro").style.color="#adff2f";
+                        document.getElementById("cuatro").style.height="290px";
+                        setTimeout(cuatro2,100) 
+                    } 
+                    if (e.which === 54) {
+                        var audioElement = document.getElementById("audio5").play(); 
+                        document.getElementById("cinco").style.color="#adff2f";
+                        document.getElementById("cinco").style.height="270px";
+                        setTimeout(cinco2,100)
+                    } 
+                    if (e.which === 55) {
+                        var audioElement = document.getElementById("audio6").play();
+                        document.getElementById("seis").style.color="#adff2f";
+                        document.getElementById("seis").style.height="250px";
+                        setTimeout(seis2,100) 
+                    } 
+                    if (e.which === 56) {
+                        var audioElement = document.getElementById("audio7").play(); 
+                        document.getElementById("siete").style.color="#adff2f";
+                        document.getElementById("siete").style.height="230px";
+                        setTimeout(siete2,100)
+                    } 
+                    if (e.which === 57) {
+                        var audioElement = document.getElementById("audio8").play();
+                        document.getElementById("ocho").style.color="#adff2f";
+                        document.getElementById("ocho").style.height="210px";
+                        setTimeout(ocho2,100) 
+                    } 
+                    return false;
+                }
+            })();
+
+        </script>
+        <script>
+         function uno2(){
+            document.getElementById("uno").style.color="#000000";
+            document.getElementById("uno").style.height="300px"
+         }
+         function dos2(){
+            document.getElementById("dos").style.color="#000000";
+            document.getElementById("dos").style.height="280px"
+         }
+         function tres2(){
+            document.getElementById("tres").style.color="#000000";
+            document.getElementById("tres").style.height="260px"
+         }
+         function cuatro2(){
+            document.getElementById("cuatro").style.color="#000000";
+            document.getElementById("cuatro").style.height="240px"
+         }
+         function cinco2(){
+            document.getElementById("cinco").style.color="#000000";
+            document.getElementById("cinco").style.height="220px"
+         }
+         function seis2(){
+            document.getElementById("seis").style.color="#000000";
+            document.getElementById("seis").style.height="200px"
+         }
+         function siete2(){
+            document.getElementById("siete").style.color="#000000";
+            document.getElementById("siete").style.height="180px"
+         }
+         function ocho2(){
+            document.getElementById("ocho").style.color="#000000";
+            document.getElementById("ocho").style.height="160px"
+         }
+
+
+        </script>
+        
+        <audio id="audio1">
+            <source src="A.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio2">
+            <source src="B.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio3">
+            <source src="C.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio4">
+            <source src="C2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio5">
+            <source src="D.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio6">
+            <source src="E.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio7">
+            <source src="F.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio8">
+            <source src="G.mp3" type="audio/mpeg">
+        </audio>
+        
+    </body>
+
+</html>

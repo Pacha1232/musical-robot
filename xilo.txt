@@ -1,0 +1,7 @@
+(function() {
+    document.onkeydown=function(e) {
+    if (e.which==50){
+        var notas
+    }
+    }   
+})();
